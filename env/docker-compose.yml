@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  jupyter:
+    build: .
+    image: jdco/simple:latest
+    container_name: c_simple
+    ports:
+      - "8888:8888"
+      - "8000:8000"
+    volumes:
+      - ../src:/home/jovyan/work/src
+      - ../notebooks:/home/jovyan/work/notebooks
+      - ../data:/home/jovyan/work/data
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
