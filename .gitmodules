@@ -1,0 +1,3 @@
+[submodule "src/filefiesta"]
+	path = src/filefiesta
+	url = git@github.com:rivingtondigital/filefiesta.git
