@@ -1,1 +1,1 @@
-# init_jupyter_go
+# setup of golang dev environment
